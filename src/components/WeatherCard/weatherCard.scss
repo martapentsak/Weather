@@ -1,0 +1,84 @@
+.weather-card {
+    height: 100px;
+    padding: 12px 0px;
+    background-color: $primary-color-2;
+    border-radius: $default-border-radius;
+    margin: 10px 9px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $main-fontFamily;
+    color: $main-color-1;
+    max-width: 80px;
+    min-width: 80px;
+
+    .weather-card-header,
+    .weather-card-header-day {
+        font-weight: 400;
+        font-size: $small-text-size;
+        margin: 0;
+    }
+
+    .weather-card-header-date {
+        color: $primary-color-4;
+        margin: 3px 0;
+        font-weight: 400;
+        font-size: $small-text-size;
+        margin: 0;
+    }
+
+    .weather-temp {
+        font-size: $primary-big-text-size;
+    }
+
+
+    .weather-icon {
+        width: 35px;
+        height: auto;
+    }
+
+}
+
+.mobile-weather-card {
+    height: 80px;
+    padding: 8px 0px;
+    border-radius: $default-border-radius;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    color: $main-color-1;
+    max-width: 60px;
+    min-width: 55px;
+
+    .weather-card-header,
+    .weather-card-header-day {
+        font-weight: 400;
+        font-size: $small-text-size;
+        margin: 0;
+    }
+
+    .weather-card-header-date {
+        color: $primary-color-4;
+        margin: 5px 0;
+        font-weight: 400;
+        font-size: 9px;
+        margin: 0;
+
+
+    }
+
+    .weather-temp {
+        font-size: $primary-text-size;
+    }
+
+
+    .weather-icon {
+        width: 30px;
+        height: auto;
+    }
+
+}

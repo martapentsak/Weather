@@ -1,0 +1,38 @@
+.hourly-weekly-forecast-container {
+    width: 58%;
+    font-family: $main-fontFamily;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .today-weather-more-info-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.mobile-hourly-weekly-forecast-container {
+    width: 100%;
+    font-family: $main-fontFamily;
+    margin-top: 5px;
+
+
+    .today-weather-more-info-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1215px) {
+    .hourly-weekly-forecast-container {
+        width: 55%;
+      
+    }
+    
+}
+

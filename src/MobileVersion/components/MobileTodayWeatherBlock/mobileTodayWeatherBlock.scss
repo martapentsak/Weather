@@ -1,0 +1,83 @@
+.mobile-today-weather-block {
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+
+
+
+    .today-weather-block-info-container {
+        height: 100%;
+        margin: 12px 0;
+        width: 100%;
+        z-index: 10;
+        border-radius: 24px;
+        position: relative;
+        padding: 20px 0;
+
+            .today-weather-temperature {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px ;
+                margin-bottom: 30px;
+
+                .day-status {
+                    font-size: 14px;
+                    color: rgb(174 162 217);
+                    margin: 0;
+                }
+
+            
+                .today-temperature {
+                    font-size: 80px;
+                    font-weight: 300;
+                    color: white;
+
+                }
+            }
+
+            .today-weathe-img {
+                height: 200px;
+                width: 220px;
+            }
+
+            .mobile-hourly-block {
+                display: flex;
+                width: 100%;
+                padding: 10px 0;
+                background-color: rgba(37, 35, 62, .8);
+                border-radius: 14px;
+                overflow-x: auto;
+                scrollbar-color: rgba(37, 35, 62, .8);
+                scrollbar-width: thin;
+            }
+
+            .hourly-weekly-weather-container {
+                width: 100%;
+            }
+
+            .mobile-weekly-block {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px 0;
+                background-color: rgba(37, 35, 62, .8);
+                border-radius: 14px;
+                margin: 12px 0;
+
+            }
+
+            .mobile-today-weather-wind-index-section{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .mobile-today-weather-info-section {
+                width: 100%;;
+            }
+        
+    }
+}

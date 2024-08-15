@@ -1,0 +1,81 @@
+.weather-info-container {
+    padding: 10px 15px;
+    background-color: $main-color-3;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: $default-border-radius;
+    width: 39%;
+    color: $main-color-1;
+
+    .weather-info-container-header {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $primary-color-4;
+
+        .weather-info-container-header-name {
+            font-weight: 400;
+        }
+
+        .weather-info-container-icon {
+            margin-right: 2px;
+        }
+    }
+
+    .weather-info-component-section {
+        height: 80%;
+
+    }
+}
+
+
+.mobile-weather-info-container {
+    padding: 10px 20px;
+    background-color: $main-color-4;
+    height: 130px;
+    margin-top: 10px;
+    border-radius: $default-border-radius;
+    width: 37%;
+    color: $main-color-1;
+
+    .weather-info-container-header {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $primary-color-4;
+
+        .weather-info-container-header-name {
+            font-weight: 400;
+        }
+
+        .weather-info-container-icon {
+            margin-right: 2px;
+        }
+       
+
+    }
+
+    .weather-info-component-section {
+        height: 80%;
+
+    }
+
+}
+
+
+
+@media (max-width: 1215px) {
+    .home-page-container {
+        width: 85%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .home-page-container {
+        width: 89%;
+    }
+    
+}

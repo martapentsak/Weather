@@ -1,0 +1,84 @@
+.weather-forecast-container {
+    background-color: $main-color-3;
+    border-radius: $default-border-radius;
+    width: 100%;
+    padding: 15px 0;
+    height: 180px;
+    margin-bottom: 15px;
+
+    .weather-forecast-container-wrapper {
+        width: 92%;
+        margin: 0 auto;
+
+        .weather-forecast-container-header {
+            display: flex;
+            align-items: center;
+
+            color: $primary-color-4;
+
+            .weather-forecast-container-title-icon {
+                margin-right: 5px;
+            }
+
+            .weather-forecast-container-title {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .weather-forecast-temperature-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-color: $scrollbar-color-1 $scrollbar-color-2;
+        scrollbar-width: thin;
+    }
+
+}
+
+.mobile-weather-forecast-container {
+    background-color: $main-color-3;
+    border-radius: $default-border-radius;
+    width: 100%;
+    padding: 10px 0;
+    height: 130px;
+    margin-bottom: 10px;
+
+    .weather-forecast-container-wrapper {
+        width: 98%;
+        margin: 0 auto;
+
+        .weather-forecast-container-header {
+            display: flex;
+            align-items: center;
+            color: $primary-color-4;
+            margin-left: 10px;
+            font-size: $small-text-size;
+
+
+            .weather-forecast-container-title-icon {
+                margin-right: 5px;
+            }
+
+            .weather-forecast-container-title {
+                font-size: $small-text-size;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        .weather-forecast-temperature-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            overflow: auto;
+            padding: 5px 0;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+}

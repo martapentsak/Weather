@@ -1,0 +1,105 @@
+.today-weather-block {
+    width: 38%;
+    height: 100%;
+    color: $main-color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .today-weather-block-info-container {
+        height: 85%;
+        width: 100%;
+        z-index: 10;
+        border-radius: $default-border-radius;
+        background-color: $main-color-3;
+        position: relative;
+        padding: 20px 0;
+
+        .today-weather-block-info-container-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 20px;
+            height: 100%;
+
+            .today-weather-temperature-info-block {
+                display: flex;
+                align-items: center;
+                padding-top: 20px;
+                height: 70%;
+                justify-content: space-around;
+                font-family: $primary-fontFamily;
+
+
+                .today-weather-temperature {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .day-status {
+                        font-size: $default-text-size;
+                        color: $primary-color-4;
+                        margin: 10px 0;
+                    }
+
+                    .weather-desc {
+                        font-size: $primary-text-size;
+                        text-transform: capitalize;
+
+                    }
+
+                    .today-temperature {
+                        font-size: $max-text-size;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .today-weathe-img {
+                    height: 200px;
+                    width: 220px;
+                }
+            }
+
+            .pair-category-section {
+                margin: 20px 0;
+            }
+
+            .today-weather-category-block {
+                margin: 15px 0;
+                ;
+
+            }
+        }
+
+
+
+        .category-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+    }
+}
+
+@media (max-width: 1215px) {
+    .today-temperature {
+        font-size: 70px !important;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .today-weather-block {
+        width: 42%;
+
+    }
+}

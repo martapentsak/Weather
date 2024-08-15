@@ -1,0 +1,1 @@
+export const kelvinToCelsius = (value: number) => value - 273.15

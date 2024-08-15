@@ -1,0 +1,1 @@
+export const CITIES_API = "https://countriesnow.space/api/v0.1/countries"

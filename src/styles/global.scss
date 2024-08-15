@@ -1,0 +1,26 @@
+@import "./mui.scss";
+@import "./globalStyles.scss";
+@import "./fontFamily.scss";
+@import "./border.scss";
+@import "./colors.scss";
+@import "./fontSize.scss";
+
+@import "../components/WeatherTemperatureSection.scss";
+@import "../components/HomePageContainer/homePageContainer.scss";
+@import "../components//LocationSelector/locationSelector.scss";
+@import "../components/TodayWeatherBlock/todayWeatherBlock.scss";
+@import "../components/TodayWeatherInfoContainer/todayWeatherInfoContainer.scss";
+@import "../components/WeatherCard/weatherCard.scss";
+@import "../components/WeatherForecastContainer/weatherForecastContainer.scss";
+@import "../components/WeatherInfoContainer/weatherInfoContainer.scss";
+@import "../components/WindInfoContainer/windInfoContainer.scss";
+@import "../components//UvIndexContainer/uvIndexContainer.scss";
+@import "../components/WeatherCardsContainer/weatherCardsContainer.scss";
+@import "../components/Modal/modal.scss";
+
+
+@import "../MobileVersion/components/MobileTodayWeatherBlock/mobileTodayWeatherBlock.scss";
+@import "../MobileVersion/components/WeeklyWeatherComponent/weeklyWeatherForecast.scss";
+
+@import "../pages/HomePage/homePage.scss";
+@import "../pages/LoadingPage/loadingPage.scss";

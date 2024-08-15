@@ -1,0 +1,57 @@
+.mobile-weekly-weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+
+    .weather-card-header-day {
+        margin-right: 10px;
+        font-weight: 400;
+    }
+
+    .weather-icon {
+        width: 30px;
+        height: auto;
+    }
+
+    .mobile-weekly-temp-section {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+
+        .min-temp {
+            margin: 5px 8px 5px 0;
+        }
+
+        .max-temp {
+            margin: 5px 0 5px 8px
+        }
+
+        .css-15gm0yv-MuiSlider-root.Mui-disabled,
+        .css-15gm0yv-MuiSlider-root {
+            padding: 1px 0;
+            background: linear-gradient(90deg, rgba(177, 219, 177, 1) 12%, rgba(255, 197, 1, 1) 41%, rgba(222, 136, 5, 1) 64%, rgba(241, 82, 43, 1) 81%);
+        }
+
+        .css-l29f8w-MuiSlider-thumb {
+            color: white;
+            border: none;
+            height: 5px;
+            width: 5px;
+        }
+    }
+
+    .weather-card-header-day {
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0;
+        width: 8%;
+    }
+
+
+
+}

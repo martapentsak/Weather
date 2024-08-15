@@ -1,0 +1,85 @@
+.wind-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+
+    .wind-category-element {
+        display: flex;
+        align-items: center;
+        font-family: $main-fontFamily;
+    
+    
+        .wind-value {
+            margin: 0 10px 0 0 ;
+            font-weight: 400;
+            font-size: $extra-big-text-size;
+        }
+    
+        .wind-category-info {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .measurement {
+            text-transform: uppercase;
+            color: $primary-color-4;
+        }
+    }
+}
+
+
+
+
+.mobile-wind-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+
+
+
+    .wind-category-element {
+        display: flex;
+        align-items: center;
+        font-family: $main-fontFamily;
+    
+    
+        .wind-value {
+            margin: 0 10px 0 0 ;
+            font-weight: 400;
+            font-size: $big-text-size;
+    
+    
+        }
+    
+        .wind-category-info {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .measurement {
+            text-transform: uppercase;
+            color: $primary-color-4;
+            font-size: 12px;
+        }
+
+        .category {
+            font-size: $small-text-size;
+
+        }
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .wind-value {
+        font-size: 28px !important;
+    }
+}

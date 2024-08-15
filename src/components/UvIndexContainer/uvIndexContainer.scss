@@ -1,0 +1,88 @@
+.uv-index-info-container {
+    font-family: $main-fontFamily;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+
+    .uv-index-value {
+        font-weight: 400;
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .uv-index-status {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .uv-slider-section {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .uv-index-advice {
+        margin: 0;
+        font-size: $small-text-size;
+        color: $primary-color-4;
+    }
+
+}
+
+.mobile-uv-index-info-container {
+    font-family: $main-fontFamily;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 15px;
+
+
+
+
+    .uv-index-value {
+        font-weight: 400;
+        font-size: $big-text-size;
+        margin: 0;
+    }
+
+    .uv-index-status {
+        margin: 0;
+        font-size: $small-text-size;
+    }
+
+    .uv-slider-section {
+        width: 100%;
+        margin: 5px 0;
+
+        .css-15gm0yv-MuiSlider-root.Mui-disabled,
+        .css-15gm0yv-MuiSlider-root {
+            padding: 1.5px 0;
+        }
+    }
+
+    .uv-index-advice {
+        margin: 0;
+        font-size: 8px;
+        color: $primary-color-4;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .uv-index-value {
+        font-size: 30px !important;
+    }
+
+    .uv-index-status {
+        margin: 0;
+        font-size: 13px !important;
+    }
+
+    .uv-slider-section {
+        margin: 5px 0 !important;
+    }
+}

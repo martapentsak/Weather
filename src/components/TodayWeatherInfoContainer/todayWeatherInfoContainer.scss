@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Inter:wght@300&display=swap');
+
+.today-weather-info-container {
+    width: 48%;
+    height: 140px;
+    border-radius: $primary-border-radius;
+    background-color: $main-color-2;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: end;
+    color: $main-color-1;
+    font-family: $main-fontFamily;
+
+
+    .today-weather-info-container-wrapper {
+        width: 90%;
+        height: 100%;
+        margin: 10px auto;
+
+        .today-weather-info-container-header {
+            display: flex;
+            align-items: center;
+            color: $primary-color-4;
+
+            .category {
+                text-transform: uppercase;
+                font-family: $main-fontFamily;
+                font-size: $default-text-size;
+                font-weight: 400;
+                margin-left: 2px;
+
+            }
+        }
+
+        .today-weather-info-value {
+            margin-left: 3px;
+            margin-top: 10px;
+
+
+
+
+            .category-value {
+                font-size: 28px;
+                font-weight: 400;
+
+            }
+
+            .weather-desc {
+                font-size: 10px;
+
+                color: $primary-color-4;
+
+
+            }
+
+
+        }
+    }
+
+}
+
+h3 {
+    margin: 0
+}
+
+.mobile-today-weather-info-container {
+    width: 200px;
+    height: 120px;
+    border-radius: $primary-border-radius;
+    background-color: $main-color-4;
+    font-family: $main-fontFamily;
+    margin: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: $main-color-1;
+
+
+
+    .today-weather-info-container-wrapper {
+        width: 90%;
+        height: 100%;
+        margin: 10px auto;
+
+        .today-weather-info-container-header {
+            display: flex;
+            align-items: center;
+            color: $primary-color-4;
+
+            .category {
+                text-transform: uppercase;
+                font-size: $small-text-size;
+                font-weight: 400;
+                margin-left: 2px;
+            }
+        }
+
+        .today-weather-info-value {
+            margin-left: 3px;
+            margin-top: 5px;
+
+
+            .category-value {
+                font-size: $primary-big-text-size;
+                font-weight: 400;
+            }
+
+            .weather-desc {
+                font-size: 8px;
+                color: $primary-color-4;
+
+
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .category-value {
+        font-size: 23px !important;
+    }
+
+    .weather-desc {
+        font-size: 9px !important;
+    }
+
+
+
+    
+}
+
+
+@media (max-width: 800px) {
+    .category-value {
+        font-size: 20px !important;
+    }
+
+    .weather-desc {
+        font-size: 8px !important;
+    }
+
+    .category {
+        font-size: 11px !important;
+    }
+}

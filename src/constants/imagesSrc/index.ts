@@ -1,0 +1,1 @@
+export const sunnyImgBackgroundSrc = "https://t3.ftcdn.net/jpg/06/66/23/66/360_F_666236653_IRgApLeaDCXsIwepS38dY2CjF6KrkU8K.jpg" 
