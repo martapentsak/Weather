@@ -1,0 +1,50 @@
+import axios from "axios";
+
+import { Location } from "./../../types/index";
+import { formatTimestampToTime } from "../formatTimestampToTime";
+import { otherDay, today } from "../dayFornat";
+import { nowHours } from "../../constants/time";
+import { getConditionFromWeatherCode } from "../getConditionFromWeatherCode";
+
+type Props = {
+  time_epoch: number;
+  temp_c: number;
+  humidity: number;
+  feelslike_c: number;
+  pressure_mb: number;
+  vis_km: number;
+  condition: { text: string };
+};
+
+export const getHourlyWeather = async (location: Location) => {
+
+
+
+  try {
+    const URL = `https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}&hourly=temperature_2m,weather_code&forecast_days=3`
+    const response = await axios.get(URL).then(response => response.data.hourly)
+    const timeArray = response.time.slice(nowHours, 25 + nowHours)
+    console.log(response)
+
+
+
+    return timeArray.map((value : string, index: number) => {
+     
+      console.log(value.slice(11))
+  
+      return {
+            temp: Math.round(response.temperature_2m[index]),
+            time: value.slice(11),
+            condition: getConditionFromWeatherCode(response.weather_code[index]),
+      };
+    });
+
+  
+    
+    // const arrayResponse = response.data.forecast.forecastday[0].hour;
+    // const nextDayResponse = response.data.forecast.forecastday[1].hour;
+ 
+  } catch (error) {
+    console.error("getHourlyWeather", error);
+  }
+};
